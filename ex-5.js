@@ -12,3 +12,12 @@ let getJohnProfile = () => {
   });
 };
 // Start coding here
+const downloadData = async () => {
+  try {
+    let result = await getJohnProfile();
+    console.log(result);
+  } catch (error) {
+    console.log(error);
+  }
+};
+downloadData();

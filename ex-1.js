@@ -14,3 +14,6 @@ let getJohnProfile = () => {
   });
 };
 // Start coding here
+// console.log() ผลลัพธ์ออกมา?
+//.then
+getJohnProfile().then((data) => {console.log(data)})

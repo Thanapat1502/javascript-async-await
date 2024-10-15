@@ -13,3 +13,6 @@ let getJohnProfile = () => {
 };
 
 // Start coding here
+//console.log() เอาผลออกมา
+//.catch
+getJohnProfile().catch((error) => {console.log(error)})

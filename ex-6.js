@@ -33,3 +33,23 @@ let getJohnOrders = () => {
 };
 
 // Start coding here
+
+/**
+ * getJohnProfile()
+  .then((data) => {
+    console.log(data);
+  })
+  .then(getJohnOrders)
+  .then((order) => {
+    console.log(order);
+  });
+
+ */
+const downloadJohnData = async () => {
+  const JohnProfile = await getJohnProfile();
+  console.log(JohnProfile);
+  const JohnOrders = await getJohnOrders();
+  console.log(JohnOrders);
+};
+
+downloadJohnData()
